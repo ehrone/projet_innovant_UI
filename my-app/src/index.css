@@ -1,0 +1,180 @@
+/* Reset margin and padding for full-width */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  justify-content: flex-start;
+  align-items: stretch; /* Ensure children (including :root) stretch full width */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #fafafa; /* Soft light background */
+}
+
+/* Set :root to full width and height */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87); /* Darker text for light theme */
+  background-color: #fafafa; /* Soft light background */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* Remove padding and margin from all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Avoids any unwanted borders */
+}
+
+/* Body and Content Styling */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center elements horizontally */
+  justify-content: flex-start;
+  padding: 2rem 0; /* Add padding at the top and bottom */
+  width: 100%; /* Ensure content takes the full width */
+  height: 100%; /* Ensure content takes the full height */
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #d9f7fc, #c6e2f0); /* Pastel Blues Gradient */
+  color: #333; /* Dark text for contrast */
+  min-height: 100vh;
+}
+
+/* Sections styling */
+.section {
+  background-color: rgba(255, 255, 255, 0.9); /* Lighter neutral background */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Light border */
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1rem; /* Margin to provide spacing between sections */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  transition: transform 0.3s;
+  width: 100%; /* Ensure sections are full-width */
+  max-width: 1200px; /* Max width to avoid too large sections */
+  margin-left: auto; /* Center sections */
+  margin-right: auto; /* Center sections */
+}
+
+.section:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+.section h4 {
+  color: #a7d8e6; /* Soft Pastel Blue Accent */
+  font-size: 1.8rem;
+}
+
+.section p {
+  color: #666; /* Softer Neutral for paragraph */
+  line-height: 1.6;
+}
+
+.section button {
+  margin-top: 1rem;
+  padding: 0.8em 1.5em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #b3d9f2; /* Soft Blue Accent */
+  color: #333; /* Dark Text */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.section button:hover {
+  background-color: #93c5de; /* Slightly darker pastel blue */
+  transform: scale(1.05); /* Slight enlargement */
+}
+
+.logo {
+  width: 100%;  /* Adjust the width */
+  height: 100%;  /* Maintain aspect ratio */
+  display: block; /* Ensure the image is a block element */
+  max-width: 100%; /* Prevent overflow, ensuring it doesn't exceed container size */
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  flex-direction: column; /* Stack the title above the nav links */
+  align-items: center;
+  padding: 2rem 4rem; /* Increase padding to make it wider */
+}
+
+.site-title {
+  font-size: 3rem; /* Large title size */
+  font-weight: 700; /* Bold for emphasis */
+  color: #333; /* Dark color for the title */
+  margin-bottom: 1.5rem; /* More space between title and nav bar */
+  text-transform: uppercase; /* Makes the title look more stylish */
+  letter-spacing: 2px; /* Adds spacing between letters */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Light text shadow */
+}
+
+/* Navigation Bar */
+.navBar {
+  display: flex;
+  justify-content: space-evenly; /* Spread out the links evenly across the width */
+  align-items: center;
+  width: 100%; /* Ensure it takes the full width of the screen */
+  padding: 0 2rem; /* Add horizontal padding */
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: #555; /* Slightly darker text color for links */
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px; /* Rounded corners for the links */
+  transition: color 0.3s, background-color 0.3s ease-in-out;
+}
+
+.navBar a:hover {
+  color: #fff; /* White text on hover */
+  background-color: #0077cc; /* Soft blue background on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 2.5rem; /* Slightly smaller title on mobile */
+  }
+
+  .navBar {
+    gap: 1.5rem; /* Reduce gap between links on smaller screens */
+    padding: 0 1rem; /* Less padding on mobile */
+  }
+}
+
+.customHeader{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+
+}
+/* Ensure responsive design for small screens */
+@media (max-width: 768px) {
+  .section {
+    margin: 1rem; /* Reduce margin on smaller screens */
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+}

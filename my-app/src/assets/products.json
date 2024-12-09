@@ -1,0 +1,179 @@
+{
+    "products": [
+      {
+        "name": "Hydrating Cream",
+        "category": "Skincare",
+        "description": "A deeply moisturizing cream that nourishes dry skin and helps restore hydration for a smooth, soft feel.",
+        "price": 19.99,
+        "resting_time": "15 minutes",
+        "skin_types": [
+          "Dry",
+          "Normal",
+          "Combination"
+        ]
+      },
+      {
+        "name": "Cleansing Gel",
+        "category": "Skincare",
+        "description": "A gentle foaming gel that removes impurities and excess oils while keeping the skin hydrated and soft.",
+        "price": 14.50,
+        "resting_time": "Immediate",
+        "skin_types": [
+          "Oily",
+          "Normal",
+          "Combination"
+        ]
+      },
+      {
+        "name": "Exfoliating Scrub (Gommage)",
+        "category": "Skincare",
+        "description": "A gentle scrub that removes dead skin cells and impurities, leaving the skin smooth and refreshed.",
+        "price": 17.99,
+        "resting_time": "5 minutes",
+        "skin_types": [
+          "Oily",
+          "Combination",
+          "Normal"
+        ]
+      },
+      {
+        "name": "Nourishing Night Cream",
+        "category": "Skincare",
+        "description": "A rich night cream that replenishes moisture and supports skin regeneration overnight, perfect for dry skin.",
+        "price": 22.00,
+        "resting_time": "Overnight",
+        "skin_types": [
+          "Dry",
+          "Mature"
+        ]
+      },
+      {
+        "name": "Gentle Face Wash",
+        "category": "Skincare",
+        "description": "A mild, non-stripping cleanser that removes dirt and makeup, suitable for sensitive skin types.",
+        "price": 12.99,
+        "resting_time": "Immediate",
+        "skin_types": [
+          "Sensitive",
+          "Dry",
+          "Normal"
+        ]
+      },
+      {
+        "name": "Clay Face Mask",
+        "category": "Skincare",
+        "description": "A purifying clay mask that draws out impurities and excess oil for clear, balanced skin.",
+        "price": 18.50,
+        "resting_time": "15 minutes",
+        "skin_types": [
+          "Oily",
+          "Combination"
+        ]
+      },
+      {
+        "name": "Moisturizing Toner",
+        "category": "Skincare",
+        "description": "A hydrating toner that refreshes and balances the skin, leaving it soft and ready for moisturizing.",
+        "price": 13.50,
+        "resting_time": "Immediate",
+        "skin_types": [
+          "Normal",
+          "Dry",
+          "Combination"
+        ]
+      },
+      {
+        "name": "Deep Cleansing Mask",
+        "category": "Skincare",
+        "description": "A deep-cleansing mask that removes impurities and tightens pores, giving your skin a refreshed, matte finish.",
+        "price": 19.00,
+        "resting_time": "15 minutes",
+        "skin_types": [
+          "Oily",
+          "Acne-prone"
+        ]
+      },
+      {
+        "name": "Daily Moisturizer",
+        "category": "Skincare",
+        "description": "A lightweight moisturizer designed for everyday use, providing long-lasting hydration without feeling greasy.",
+        "price": 16.00,
+        "resting_time": "Immediate",
+        "skin_types": [
+          "Normal",
+          "Combination",
+          "Oily"
+        ]
+      },
+      {
+        "name": "Soothing Aloe Gel",
+        "category": "Skincare",
+        "description": "An aloe-based gel that soothes irritated skin and reduces redness. Ideal for sensitive and sun-exposed skin.",
+        "price": 11.50,
+        "resting_time": "Immediate",
+        "skin_types": [
+          "Sensitive",
+          "Normal"
+        ]
+      },
+      {
+        "name": "Purifying Charcoal Mask",
+        "category": "Skincare",
+        "description": "A detoxifying mask with activated charcoal that draws out impurities, leaving your skin clear and rejuvenated.",
+        "price": 18.00,
+        "resting_time": "20 minutes",
+        "skin_types": [
+          "Oily",
+          "Combination",
+          "Acne-prone"
+        ]
+      },
+      {
+        "name": "Lightweight Day Cream",
+        "category": "Skincare",
+        "description": "A non-greasy day cream that provides hydration while protecting the skin from environmental stressors.",
+        "price": 17.00,
+        "resting_time": "Immediate",
+        "skin_types": [
+          "Normal",
+          "Combination",
+          "Oily"
+        ]
+      },
+      {
+        "name": "Micellar Water",
+        "category": "Skincare",
+        "description": "A gentle, no-rinse micellar water that removes makeup and cleanses the skin without drying it out.",
+        "price": 15.00,
+        "resting_time": "Immediate",
+        "skin_types": [
+          "Sensitive",
+          "Normal"
+        ]
+      },
+      {
+        "name": "Anti-Blemish Face Wash",
+        "category": "Skincare",
+        "description": "A targeted facial wash that helps reduce breakouts and excess oil, leaving the skin feeling refreshed.",
+        "price": 16.99,
+        "resting_time": "Immediate",
+        "skin_types": [
+          "Oily",
+          "Acne-prone"
+        ]
+      },
+      {
+        "name": "Revitalizing Eye Cream",
+        "category": "Skincare",
+        "description": "A soothing eye cream that reduces puffiness and dark circles while revitalizing the delicate skin around the eyes.",
+        "price": 20.00,
+        "resting_time": "10 minutes",
+        "skin_types": [
+          "Normal",
+          "Dry",
+          "Mature"
+        ]
+      }
+    ]
+  }
+  
