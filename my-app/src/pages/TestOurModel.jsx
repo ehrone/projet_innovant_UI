@@ -6,7 +6,7 @@ export const TestOurModel = (props) => {
   const [isCapturing, setIsCapturing] = useState(false); // the capturing state
   const [errorMessage, setErrorMessage] = useState(""); // Error message for camera
   const videoRef = useRef(null); // the video element
-  const canvasRef = useRef(null); //  canvas element
+  const canvasRef = useRef(null); // canvas element
 
   const handleStartCamera = async () => {
     setErrorMessage(""); // Reset error message
@@ -52,6 +52,47 @@ export const TestOurModel = (props) => {
     }
   };
 
+  const handleSendPhotoToAPI = async () => {
+    if (!photo) {
+      setErrorMessage("No photo to send.");
+      return;
+    }
+  
+    // Convert base64 to Blob
+    const byteString = atob(photo.split(',')[1]); // Remove the "data:image/png;base64," prefix
+    const arrayBuffer = new ArrayBuffer(byteString.length);
+    const uintArray = new Uint8Array(arrayBuffer);
+    
+    for (let i = 0; i < byteString.length; i++) {
+      uintArray[i] = byteString.charCodeAt(i);
+    }
+  
+    const blob = new Blob([uintArray], { type: "image/png" });
+  
+    // Create FormData and append the blob as a file
+    const formData = new FormData();
+    formData.append("file", blob, "captured_image.png"); // You can name the file as you like
+  
+    try {
+      const response = await fetch("http://127.0.0.1:8000/analyse", {
+        method: "POST",
+        body: formData,
+      });
+  
+      const result = await response.json();
+      if (response.ok) {
+        console.log("Photo successfully sent to the API:", result);
+        // Handle the response, e.g., display model's results
+      } else {
+        setErrorMessage("Failed to send the photo.");
+      }
+    } catch (error) {
+      console.error("Error sending the photo:", error);
+      setErrorMessage("Error sending the photo to the API.");
+    }
+  };
+  
+
   return (
     <div className="content">
       <NavBar />
@@ -93,6 +134,9 @@ export const TestOurModel = (props) => {
               <img src={photo} alt="Captured" style={{ maxWidth: "100%" }} />
               <button onClick={handleStartCamera} style={{ marginTop: "10px" }}>
                 Retake Photo
+              </button>
+              <button onClick={handleSendPhotoToAPI} style={{ marginTop: "10px" }}>
+                Send Photo to API
               </button>
             </div>
           )}
